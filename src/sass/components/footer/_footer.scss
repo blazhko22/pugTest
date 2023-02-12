@@ -1,0 +1,32 @@
+.footer {
+    background-color: $secondary-bg-color;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 603px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 768px;
+        height: 463px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 0 15px;
+        max-width: 1600px;
+        height: 100%;
+    }
+}
+.footer__block {
+    padding-top: 60px;
+    padding-bottom: 60px;  
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    } 
+}
+.footer__block-box {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 507px;
+    } 
+}

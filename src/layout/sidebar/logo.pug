@@ -1,0 +1,9 @@
+include ../../mixins/svg
+
+.box
+    a(href="#").logo 
+        +svg('icon-logo')
+        p Dashboard
+        span v.01 
+    button(aria-expanded="false" aria-controls="mobile-menu").menu-toggle.js-open-menu           
+        +svg('icon-menu')

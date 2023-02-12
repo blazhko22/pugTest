@@ -1,0 +1,10 @@
+doctype html
+html(lang="en")
+    include includes/head
+    body
+        block content 
+            .wrapper
+                include sidebar
+                include main
+        include mobile
+        script(src="./src/js/mobile-menu.js") 
