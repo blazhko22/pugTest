@@ -35,28 +35,121 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    height: 100%;
 }
-.mobile-list {
+// .mobile-list {
+//     display: flex;
+//     margin-top: 64px;
+//     margin-left: auto;
+// }
+// .mobile-social {
+//     padding-left: 10px;
+//     padding-right: 10px;
+//     border-right: 1px solid rgba(33, 33, 33, 0.2);
+//   &:first-child {
+//       padding-left: 0;
+//   }
+//   &:last-child {
+//       border-right: none;
+//   }
+// }
+// .mobile-link {
+//     text-decoration: none;
+//     font-weight: 500;
+//     font-size: 18px;
+//     line-height: 1.2;
+//     letter-spacing: 0.02em;
+//     color: #2196F3;
+// }
+
+// .nav {
+//     margin: 0 auto;
+// }
+.nav_list {
     display: flex;
-    margin-top: 64px;
-    margin-left: auto;
+    flex-direction: column;
 }
-.mobile-social {
-    padding-left: 10px;
-    padding-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-  &:first-child {
-      padding-left: 0;
-  }
-  &:last-child {
-      border-right: none;
-  }
+.nav_item {
+    margin-top: 10px;
+    &:first-child {
+        margin-top: 0;
+    }
 }
-.mobile-link {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2196F3;
+.nav_item_link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $hover-color;
+        .nav_item_link_box {
+            color: $secondary-bg-color;
+            .dashboard svg,
+            .income svg,
+            .promote svg {
+                fill: $secondary-bg-color;
+            }
+            .product svg,
+            .customers svg,
+            .help svg {
+                fill: none;
+                stroke: $secondary-bg-color;
+            }
+        }
+        .nav_item_link_icon {
+            stroke: $secondary-bg-color;
+        }
+    }
+}
+.nav_item_link_box {
+    display: flex;
+    align-items: center;
+    color: $sidebar-text-color;
+    & span {
+        display: flex;
+        align-items: center;
+        margin-right: 14px;
+    }
+    & svg {
+        width: 24px;
+        height: 24px;
+    }
+    .dashboard svg,
+    .income svg,
+    .promote svg {
+        fill: $sidebar-text-color;
+    }
+    .product svg,
+    .customers svg,
+    .help svg {
+        fill: none;
+        stroke: $sidebar-text-color;
+    }
+}
+.nav_item_link_icon {
+    display: flex;
+    align-items: center;
+    stroke: $sidebar-text-color;
+    & svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+.user {
+    display: flex;
+    margin-top: auto;
+}
+.user_box {
+    margin-left: 12px;
+}
+.user_name {
+    color: $title-color;
+}
+.user_profession {
+    color: $project-color;
 }

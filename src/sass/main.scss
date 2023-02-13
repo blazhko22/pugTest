@@ -2,11 +2,10 @@
     @import "./utils/normalize";
     @import "./utils/fonts";
     @import "./base/general_markup";
-    @import "./components/sidebar/button-mobile";
-    // @import "./components/header/header_logo";
+    @import "./components/sidebar/sidebar";
+    @import "./components/sidebar/sidebar_logo";
     @import "./components/sidebar/sidebar_mobile";
-    // @import "./components/header/header_nav";
-    // @import "./components/header/header_list";
+    @import "./components/sidebar/sidebar_userNav";
     // @import "./components/main/hero";
     // @import "./components/main/specifics";
     // @import "./components/main/business";
