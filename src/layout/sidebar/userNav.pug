@@ -1,35 +1,54 @@
+include ../../mixins/svg
+
 .userNav
     nav.nav 
-        ul.list 
-            li.item
-                a(href="#").item_link.active
-                    +svg('icon-key')
-                    p Dashboard 
-            li.item
-                a(href="#").item_link
-                    +svg('icon-d')
-                    p Dashboard 
-                    +svg('icon-chevron')
-            li.item
-                a(href="#").item_link
-                    +svg('icon-user')
-                    p Dashboard 
-                    +svg('icon-chevron')
-            li.item
-                a(href="#").item_link
-                    +svg('icon-wallet')
-                    p Dashboard 
-                    +svg('icon-chevron')
-            li.item
-                a(href="#").item_link
-                    +svg('icon-discount')
-                    p Dashboard 
-                    +svg('icon-chevron')
-            li.item
-                a(href="#").item_link
-                    +svg('icon-message')
-                    p Dashboard 
-                    +svg('icon-chevron')
+        ul.nav_list 
+            li.nav_item
+                a(href="#").nav_item_link
+                    .nav_item_link_box
+                        span.dashboard
+                            +svg('icon-key')
+                        p Dashboard 
+            li.nav_item
+                a(href="#").nav_item_link
+                    .nav_item_link_box
+                        span.product
+                            +svg('icon-d')
+                        p Product
+                    .nav_item_link_icon 
+                        +svg('icon-chevron')
+            li.nav_item
+                a(href="#").nav_item_link.active
+                    .nav_item_link_box
+                        span.customers
+                            +svg('icon-user')
+                        p Customers
+                    .nav_item_link_icon 
+                        +svg('icon-chevron')
+            li.nav_item
+                a(href="#").nav_item_link
+                    .nav_item_link_box
+                        span.income
+                            +svg('icon-wallet')
+                        p Income
+                    .nav_item_link_icon 
+                        +svg('icon-chevron')
+            li.nav_item
+                a(href="#").nav_item_link
+                    .nav_item_link_box
+                        span.promote
+                            +svg('icon-discount')
+                        p Promote
+                    .nav_item_link_icon 
+                        +svg('icon-chevron')
+            li.nav_item
+                a(href="#").nav_item_link
+                    .nav_item_link_box
+                        span.help
+                            +svg('icon-message')
+                        p Help
+                    .nav_item_link_icon 
+                        +svg('icon-chevron')
     .user 
         img(src="src/img/evano.png", alt="Evano").user_img
         .user_box 

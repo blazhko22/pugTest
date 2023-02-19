@@ -31,5 +31,13 @@
         width: 30px;
         height: 30px;
         margin-right: 8px;
+        @media screen and (min-width: 1200px) {
+            width: 37px;
+            height: 37px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 39px;
     }
 }

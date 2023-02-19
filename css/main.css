@@ -283,11 +283,32 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-width: 1440px;
+}
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    margin: auto;
+  }
 }
 
 .sidebar {
   background-color: #ffffff;
   padding: 26px 28px;
+}
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    width: 306px;
+    padding-top: 36px;
+    padding-bottom: 76px;
+  }
 }
 
 .box {
@@ -317,6 +338,18 @@ a {
   height: 30px;
   margin-right: 8px;
 }
+@media screen and (min-width: 1200px) {
+  .logo svg {
+    width: 37px;
+    height: 37px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
 
 .menu-toggle {
   min-height: 40px;
@@ -341,7 +374,7 @@ a {
   outline: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .menu-toggle {
     display: none;
   }
@@ -354,19 +387,66 @@ a {
 .userNav {
   display: none;
 }
+@media screen and (min-width: 1000px) {
+  .userNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 64px;
+  }
+}
 
 .main {
   padding: 26px 28px;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main {
+    padding: 41px 87px 250px 87px;
+  }
 }
 
 .customersMain {
   margin-top: 20px;
   background-color: #ffffff;
   border-radius: 30px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .customersMain {
+    margin-top: 51px;
+  }
 }
 
 .headerCustomers {
   padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .headerCustomers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .headerCustomers {
+    padding: 30px 40px 40px 40px;
+  }
 }
 
 .form {
@@ -436,6 +516,22 @@ a {
   display: none;
   margin-top: 30px;
 }
+@media screen and (min-width: 768px) {
+  .listCustomers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 28px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .listCustomers {
+    padding: 0 40px;
+  }
+}
 
 .itemCustomers {
   color: #b5b7c0;
@@ -444,9 +540,19 @@ a {
 .lineCustomers {
   border-bottom: 1px solid #eeeeee;
 }
+@media screen and (min-width: 768px) {
+  .lineCustomers {
+    margin-top: 14px;
+  }
+}
 
 .userCustomersList {
   padding: 0 28px;
+}
+@media screen and (min-width: 1440px) {
+  .userCustomersList {
+    padding: 0 40px;
+  }
 }
 
 .userCustomersItem {
@@ -455,6 +561,17 @@ a {
 }
 .userCustomersItem:last-child {
   border-bottom: none;
+}
+
+@media screen and (min-width: 768px) {
+  .userList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .activeBtn {
@@ -474,7 +591,7 @@ a {
 }
 
 .pagination-cover {
-  margin-top: 94px;
+  margin-top: 30px;
 }
 
 .pagination {
@@ -611,6 +728,14 @@ a {
 .nav_item:first-child {
   margin-top: 0;
 }
+@media screen and (min-width: 1200px) {
+  .nav_item {
+    margin-top: 25px;
+  }
+  .nav_item:first-child {
+    margin-top: 0;
+  }
+}
 
 .nav_item_link {
   display: -webkit-box;
@@ -714,6 +839,16 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-top: auto;
+}
+@media screen and (min-width: 1000px) {
+  .user {
+    margin-top: 470px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .user {
+    margin-top: 670px;
+  }
 }
 
 .user_box {

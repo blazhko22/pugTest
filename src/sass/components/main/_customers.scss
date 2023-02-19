@@ -65,9 +65,21 @@
     margin-top: 20px;
     background-color: $secondary-bg-color;
     border-radius: 30px;
+    padding-bottom: 40px;
+    @media screen and (min-width: 1440px) {
+        margin-top: 51px;
+    }
 }
 .headerCustomers {
     padding: 20px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 1440px) {
+        padding: 30px 40px 40px 40px;
+    }
 }
 .form {
     position: relative;
@@ -118,22 +130,43 @@
 .listCustomers {
     display: none;
     margin-top: 30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 28px;
+    }
+    @media screen and (min-width: 1440px) {
+        padding: 0 40px;
+    }
 }
 .itemCustomers {
     color: $secondary-text-color;
+    
 }
 .lineCustomers {
     border-bottom: 1px solid $line-solid;
+    @media screen and (min-width: 768px) {
+        margin-top: 14px;
+    }
 }
 
 .userCustomersList {
     padding: 0 28px;
+    @media screen and (min-width: 1440px) {
+        padding: 0 40px;
+    }
 }
 .userCustomersItem {
     padding: 26px 0;
     border-bottom: 1px solid $line-solid;
     &:last-child {
         border-bottom: none;
+    }
+}
+.userList {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
     }
 }
 .activeBtn {

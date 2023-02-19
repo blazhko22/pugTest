@@ -1,5 +1,11 @@
 .userNav {
     display: none;
+    @media screen and (min-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        margin-top: 64px;
+        // height: 100%;
+    }
 }
 // .header__box {
 //     display: flex;

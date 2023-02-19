@@ -41,15 +41,14 @@ img {
 a {
     text-decoration: none;
 }
-// .title {
-//     font-weight: 600;
-//     font-size: 28px;
-//     line-height: 1.17;
-//     text-align: center;
-//     color: $secondary-text-color;
-//     margin-bottom: 30px;
-// }
 .wrapper {
     display: flex;
     flex-direction: column;
+    max-width: 1440px;
+    @media screen and (min-width: 1000px) {
+        flex-direction: row;
+    }
+    @media screen and (min-width: 1440px) {
+        margin: auto;
+    }
 }

@@ -1,4 +1,9 @@
 .sidebar {
     background-color: $secondary-bg-color;
     padding: 26px 28px;
+    @media screen and (min-width: 1200px) {
+        width: 306px;
+        padding-top: 36px;
+        padding-bottom: 76px;
+    }
 }
