@@ -1,0 +1,24 @@
+include ../../mixins/svg
+include ../../mixins/user
+
+.customersMain
+    .headerCustomers
+        form.form(action="#") 
+            button.search
+                +svg('icon-search')
+            input.input(type="text" placeholder="Search") 
+        .allCustomers
+            h2.titleCustomers All Customers
+            p.textCustomers Active Members
+        ul.listCustomers
+            +itemCustomers('Customer Name')
+            +itemCustomers('Company')
+            +itemCustomers('Phone Number')
+            +itemCustomers('Email')
+            +itemCustomers('Country')
+            +itemCustomers('Status')
+    .lineCustomers
+    include userCustomersItem 
+    //- .paginator(onclick="pagination(event)")
+    .pagination-cover
+        ul.pagination

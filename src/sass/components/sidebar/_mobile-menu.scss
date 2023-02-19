@@ -85,7 +85,8 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
-    &:focus {
+    &:focus,
+    &.active {
         background-color: $hover-color;
         .nav_item_link_box {
             color: $secondary-bg-color;
